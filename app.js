@@ -4,6 +4,7 @@ require('express-async-errors')
 const express=require('express')
 const app =express()
 const morgan=require('morgan')
+const cookieParser=require('cookie-parser')
 // connect BD
 const connectDB=require('./db/connect')
 // require middlewares
@@ -12,7 +13,7 @@ const errorHandlerMiddleware=require('./middleware/error-handler')
 // basic route
 app.use(express.json())
 app.use(morgan('tiny'))
-
+app.use(cookieParser(process.env.JWT_SECRET))
 const authRouter=require('./routes/authRouter')
 
 app.get('/',(req,res)=>{res.send('e-commerce-api')})
