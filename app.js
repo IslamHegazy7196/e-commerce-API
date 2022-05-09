@@ -15,9 +15,11 @@ app.use(express.json())
 app.use(morgan('tiny'))
 app.use(cookieParser(process.env.JWT_SECRET))
 const authRouter=require('./routes/authRouter')
+const userRouter=require('./routes/userRouter')
 
 app.get('/',(req,res)=>{res.send('e-commerce-api')})
 app.use('/api/v1/auth',authRouter)
+app.use('/api/v1/users',userRouter)
 app.use(notFoundMiddleware)
 app.use(errorHandlerMiddleware)
 
