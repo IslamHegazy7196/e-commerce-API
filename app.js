@@ -20,11 +20,12 @@ app.use(fileUpload())
 const authRouter=require('./routes/authRouter')
 const userRouter=require('./routes/userRouter')
 const productRouter=require('./routes/productRouter')
-
+const reviewRouter=require('./routes/reviewRouter')
 app.get('/',(req,res)=>{res.send('e-commerce-api')})
 app.use('/api/v1/auth',authRouter)
 app.use('/api/v1/users',userRouter)
 app.use('/api/v1/products',productRouter)
+app.use('/api/v1/reviews',reviewRouter)
 app.use(notFoundMiddleware)
 app.use(errorHandlerMiddleware)
 
