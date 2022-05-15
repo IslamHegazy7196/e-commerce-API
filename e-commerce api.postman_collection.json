@@ -23,9 +23,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/auth/login",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/auth/login",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"auth",
@@ -41,9 +41,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/auth/logout",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/auth/logout",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"auth",
@@ -68,9 +68,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/auth/register",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/auth/register",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"auth",
@@ -100,9 +100,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/users/updateUser",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/users/updateUser",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"users",
@@ -127,9 +127,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/users/updateUserPassword",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/users/updateUserPassword",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"users",
@@ -145,9 +145,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/users/",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/users/",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"users",
@@ -163,9 +163,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/users/showMe",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/users/showMe",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"users",
@@ -181,9 +181,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/users/62773b026415a57fcdc3dba9",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/users/62773b026415a57fcdc3dba9",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"users",
@@ -204,9 +204,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/products/",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/products/",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"products",
@@ -222,9 +222,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/products/627b116f051b8bebdcdce8ff",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/products/627b116f051b8bebdcdce8ff",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"products",
@@ -249,9 +249,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/products/",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/products/",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"products",
@@ -276,9 +276,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/products/627b0aebb8d11b496ab1d80f",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/products/627b0aebb8d11b496ab1d80f",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"products",
@@ -294,9 +294,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/products/627b0aebb8d11b496ab1d80f",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/products/627b0aebb8d11b496ab1d80f",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"products",
@@ -322,9 +322,9 @@
 							]
 						},
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/products/uploadImage",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/products/uploadImage",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"products",
@@ -345,9 +345,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/reviews/",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/reviews/",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"reviews",
@@ -363,9 +363,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/reviews/627b9ce1ee194a4411946637",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/reviews/627b9ce1ee194a4411946637",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"reviews",
@@ -390,9 +390,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/reviews/",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/reviews/",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"reviews",
@@ -417,9 +417,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/reviews/627cfc0fc12a7a00a00efd7b",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/reviews/627cfc0fc12a7a00a00efd7b",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"reviews",
@@ -435,9 +435,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/reviews/627cfde034b52ab3a233b97d",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/reviews/627cfde034b52ab3a233b97d",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"reviews",
@@ -458,9 +458,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/orders/",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/orders/",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"orders",
@@ -476,9 +476,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/orders/6280ade689173b4ba2261763",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/orders/6280ade689173b4ba2261763",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"orders",
@@ -503,9 +503,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/orders/",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/orders/",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"orders",
@@ -530,9 +530,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/orders/6280ade689173b4ba2261763",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/orders/6280ade689173b4ba2261763",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"orders",
@@ -548,9 +548,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://islam-h-e-commerce-api.herokuapp.com/orders/showAllMyOrders",
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/api/v1/orders/showAllMyOrders",
 							"host": [
-								"https://islam-h-e-commerce-api.herokuapp.com"
+								"https://islam-h-e-commerce-api.herokuapp.com/api/v1"
 							],
 							"path": [
 								"orders",
