@@ -1,0 +1,566 @@
+{
+	"info": {
+		"_postman_id": "cf8bfb1c-f392-47e8-a912-276b8e86ce8b",
+		"name": "e-commerce api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"mhspn.4444\",\"email\":\"mhspn.4444@gmail.com\",\"password\":\"mhspn.4444\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/auth/login",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/auth/logout",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"mhspn.5555\",\"email\":\"mhspn.5555@gmail.com\",\"password\":\"mhspn.5555\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/auth/register",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "update user",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"333333\",\"email\":\"333333@gmail.com\",\"oldPassword\":\"6565123\",\"newPassword\":\"666666\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/users/updateUser",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"users",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user password",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"333333\",\"email\":\"333333@gmail.com\",\"oldPassword\":\"6565123\",\"newPassword\":\"666666\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/users/updateUserPassword",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"users",
+								"updateUserPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/users/",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show current user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/users/showMe",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"users",
+								"showMe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/users/62773b026415a57fcdc3dba9",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"users",
+								"62773b026415a57fcdc3dba9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "get all products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/products/",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/products/627b116f051b8bebdcdce8ff",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"products",
+								"627b116f051b8bebdcdce8ff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"accent chair\",\r\n    \"price\": 25999,\r\n    \r\n    \"colors\": [\r\n        \"#ff0000\",\r\n        \"#00ff00\",\r\n        \"#0000ff\"\r\n    ],\r\n    \"company\": \"marcos\",\r\n    \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n    \"category\": \"office\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/products/",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update product",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"accent chaaaaaaair\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/products/627b0aebb8d11b496ab1d80f",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"products",
+								"627b0aebb8d11b496ab1d80f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/products/627b0aebb8d11b496ab1d80f",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"products",
+								"627b0aebb8d11b496ab1d80f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/iii/Desktop/react-projects-master/node-express-course-main/node-express-course-main/07-file-upload/starter/public/uploads/computer-1.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/products/uploadImage",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"products",
+								"uploadImage"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reviews",
+			"item": [
+				{
+					"name": "get all reviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/reviews/",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"reviews",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/reviews/627b9ce1ee194a4411946637",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"reviews",
+								"627b9ce1ee194a4411946637"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":\"627b116f051b8bebdcdce8ff\",\r\n    \"rating\":5,\r\n    \"title\":\"good product\",\r\n    \"comment\":\"very very good product\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/reviews/",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"reviews",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update review",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"55555ag\",\r\n    \"rating\":4,\r\n    \"comment\":\"very very weird555555\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/reviews/627cfc0fc12a7a00a00efd7b",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"reviews",
+								"627cfc0fc12a7a00a00efd7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete review",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/reviews/627cfde034b52ab3a233b97d",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"reviews",
+								"627cfde034b52ab3a233b97d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "get all orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/orders/",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/orders/6280ade689173b4ba2261763",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"orders",
+								"6280ade689173b4ba2261763"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tax\": 399,\r\n    \"shippingFee\": 499,\r\n    \"items\": [\r\n      {\r\n        \"name\": \"accent chair\",\r\n        \"price\": 2599,\r\n        \"image\": \"https://dl.airtable.com/.attachmentThumbnails/e8bc3791196535af65f40e36993b9e1f/438bd160\",\r\n        \"amount\": 34,\r\n        \"product\": \"627b116f051b8bebdcdce8ff\"\r\n      }\r\n    ]\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/orders/",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update order",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"paymentIntentId\":\"someRandomValue\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/orders/6280ade689173b4ba2261763",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"orders",
+								"6280ade689173b4ba2261763"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show all my orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://islam-h-e-commerce-api.herokuapp.com/orders/showAllMyOrders",
+							"host": [
+								"https://islam-h-e-commerce-api.herokuapp.com"
+							],
+							"path": [
+								"orders",
+								"showAllMyOrders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

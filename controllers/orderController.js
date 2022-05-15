@@ -57,7 +57,7 @@ const createOrder = async (req, res) => {
 };
 const getAllOrders = async (req, res) => {
   const orders = await Order.find({});
-  res.status(StatusCodes.OK).json({ orders, count: order.length });
+  res.status(StatusCodes.OK).json({ orders, count: orders.length });
 };
 const getSingleOrder = async (req, res) => {
   const { id: orderId } = req.params;

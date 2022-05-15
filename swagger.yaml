@@ -1,0 +1,1214 @@
+openapi: 3.0.0
+
+info:
+
+  title: e-commerce api
+
+  contact: {}
+
+  version: '1.0'
+
+servers:
+
+- url: https://islam-h-e-commerce-api.herokuapp.com/api/v1
+
+  variables: {}
+
+paths:
+
+  /auth/login:
+
+    post:
+
+      tags:
+
+      - auth
+
+      summary: login
+
+      operationId: login
+
+      parameters: []
+
+      requestBody:
+
+        description: ''
+
+        content:
+
+          application/json:
+
+            schema:
+
+              $ref: '#/components/schemas/loginrequest'
+
+            example:
+
+              name: mhspn.4444
+
+              email: mhspn.4444@gmail.com
+
+              password: mhspn.4444
+
+        required: true
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /auth/logout:
+
+    get:
+
+      tags:
+
+      - auth
+
+      summary: logout
+
+      operationId: logout
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /auth/register:
+
+    post:
+
+      tags:
+
+      - auth
+
+      summary: register
+
+      operationId: register
+
+      parameters: []
+
+      requestBody:
+
+        description: ''
+
+        content:
+
+          application/json:
+
+            schema:
+
+              $ref: '#/components/schemas/registerrequest'
+
+            example:
+
+              name: mhspn.5555
+
+              email: mhspn.5555@gmail.com
+
+              password: mhspn.5555
+
+        required: true
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /users/updateUser:
+
+    patch:
+
+      tags:
+
+      - users
+
+      summary: update user
+
+      operationId: updateuser
+
+      parameters: []
+
+      requestBody:
+
+        description: ''
+
+        content:
+
+          application/json:
+
+            schema:
+
+              $ref: '#/components/schemas/updateuserrequest'
+
+            example:
+
+              name: '333333'
+
+              email: 333333@gmail.com
+
+              oldPassword: '6565123'
+
+              newPassword: '666666'
+
+        required: true
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /users/updateUserPassword:
+
+    patch:
+
+      tags:
+
+      - users
+
+      summary: update user password
+
+      operationId: updateuserpassword
+
+      parameters: []
+
+      requestBody:
+
+        description: ''
+
+        content:
+
+          application/json:
+
+            schema:
+
+              $ref: '#/components/schemas/updateuserpasswordrequest'
+
+            example:
+
+              name: '333333'
+
+              email: 333333@gmail.com
+
+              oldPassword: '6565123'
+
+              newPassword: '666666'
+
+        required: true
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /users:
+
+    get:
+
+      tags:
+
+      - users
+
+      summary: get all users
+
+      operationId: getallusers
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /users/showMe:
+
+    get:
+
+      tags:
+
+      - users
+
+      summary: show current user
+
+      operationId: showcurrentuser
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /users/{id}:
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+        description: The user ID.
+
+    get:
+
+      tags:
+
+      - users
+
+      summary: get single user
+
+      operationId: getsingleuser
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /products:
+
+    get:
+
+      tags:
+
+      - product
+
+      summary: get all products
+
+      operationId: getallproducts
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+    post:
+
+      tags:
+
+      - product
+
+      summary: create product
+
+      operationId: createproduct
+
+      parameters: []
+
+      requestBody:
+
+        description: ''
+
+        content:
+
+          application/json:
+
+            schema:
+
+              $ref: '#/components/schemas/createproductrequest'
+
+            example:
+
+              name: accent chair
+
+              price: 25999
+
+              colors:
+
+              - '#ff0000'
+
+              - '#00ff00'
+
+              - '#0000ff'
+
+              company: marcos
+
+              description: Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+
+              category: office
+
+        required: true
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /products/{id}:
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+        description: The product ID.
+
+    get:
+
+      tags:
+
+      - product
+
+      summary: get single product
+
+      operationId: getsingleproduct
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /products/{id2}:
+    parameters:
+      - in: path
+        name: id2
+        schema:
+          type: string
+        required: true
+        description: The product ID.
+
+    patch:
+
+      tags:
+
+      - product
+
+      summary: update product
+
+      operationId: updateproduct
+
+      parameters: []
+
+      requestBody:
+
+        description: ''
+
+        content:
+
+          application/json:
+
+            schema:
+
+              $ref: '#/components/schemas/updateproductrequest'
+
+            example:
+
+              name: accent chaaaaaaair
+
+        required: true
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+    delete:
+
+      tags:
+
+      - product
+
+      summary: delete product
+
+      operationId: deleteproduct
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /products/uploadImage:
+
+    post:
+
+      tags:
+
+      - product
+
+      summary: upload image
+
+      operationId: uploadimage
+
+      parameters: []
+
+      requestBody:
+
+        content:
+
+          application/x-www-form-urlencoded:
+
+            encoding: {}
+
+            schema:
+
+              required:
+
+              - image
+
+              type: object
+
+              properties:
+
+                image:
+
+                  type: string
+
+        required: false
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /reviews:
+
+    get:
+
+      tags:
+
+      - reviews
+
+      summary: get all reviews
+
+      operationId: getallreviews
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+    post:
+
+      tags:
+
+      - reviews
+
+      summary: create review
+
+      operationId: createreview
+
+      parameters: []
+
+      requestBody:
+
+        description: ''
+
+        content:
+
+          application/json:
+
+            schema:
+
+              $ref: '#/components/schemas/createreviewrequest'
+
+            example:
+
+              product: 627b116f051b8bebdcdce8ff
+
+              rating: 5
+
+              title: good product
+
+              comment: very very good product
+
+        required: true
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /reviews/{id}:
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+        description: The review ID.
+
+    get:
+
+      tags:
+
+      - reviews
+
+      summary: get single review
+
+      operationId: getsinglereview
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /reviews/{id2}:
+    parameters:
+      - in: path
+        name: id2
+        schema:
+          type: string
+        required: true
+        description: The review ID.
+
+    patch:
+
+      tags:
+
+      - reviews
+
+      summary: update review
+
+      operationId: updatereview
+
+      parameters: []
+
+      requestBody:
+
+        description: ''
+
+        content:
+
+          application/json:
+
+            schema:
+
+              $ref: '#/components/schemas/updatereviewrequest'
+
+            example:
+
+              title: 55555ag
+
+              rating: 4
+
+              comment: very very weird555555
+
+        required: true
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /reviews/{id3}:
+    parameters:
+      - in: path
+        name: id3
+        schema:
+          type: string
+        required: true
+        description: The review ID.
+
+    delete:
+
+      tags:
+
+      - reviews
+
+      summary: delete review
+
+      operationId: deletereview
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /orders:
+
+    get:
+
+      tags:
+
+      - orders
+
+      summary: get all orders
+
+      operationId: getallorders
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+    post:
+
+      tags:
+
+      - orders
+
+      summary: create order
+
+      operationId: createorder
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /orders/{id}:
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+        description: The order ID.
+
+    get:
+
+      tags:
+
+      - orders
+
+      summary: get single order
+
+      operationId: getsingleorder
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /orders/{id2}:
+    parameters:
+      - in: path
+        name: id2
+        schema:
+          type: string
+        required: true
+        description: The order ID.
+
+    patch:
+
+      tags:
+
+      - orders
+
+      summary: update route
+
+      operationId: updateroute
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+  /orders/showAllMyOrders:
+
+    get:
+
+      tags:
+
+      - orders
+
+      summary: show all my orders
+
+      operationId: showallmyorders
+
+      parameters: []
+
+      responses:
+
+        '200':
+
+          description: ''
+
+          headers: {}
+
+      deprecated: false
+
+components:
+
+  schemas:
+
+    loginrequest:
+
+      title: loginrequest
+
+      required:
+
+      - name
+
+      - email
+
+      - password
+
+      type: object
+
+      properties:
+
+        name:
+
+          type: string
+
+        email:
+
+          type: string
+
+        password:
+
+          type: string
+
+      example:
+
+        name: mhspn.4444
+
+        email: mhspn.4444@gmail.com
+
+        password: mhspn.4444
+
+    registerrequest:
+
+      title: registerrequest
+
+      required:
+
+      - name
+
+      - email
+
+      - password
+
+      type: object
+
+      properties:
+
+        name:
+
+          type: string
+
+        email:
+
+          type: string
+
+        password:
+
+          type: string
+
+      example:
+
+        name: mhspn.5555
+
+        email: mhspn.5555@gmail.com
+
+        password: mhspn.5555
+
+    updateuserrequest:
+
+      title: updateuserrequest
+
+      required:
+
+      - name
+
+      - email
+
+      - oldPassword
+
+      - newPassword
+
+      type: object
+
+      properties:
+
+        name:
+
+          type: string
+
+        email:
+
+          type: string
+
+        oldPassword:
+
+          type: string
+
+        newPassword:
+
+          type: string
+
+      example:
+
+        name: '333333'
+
+        email: 333333@gmail.com
+
+        oldPassword: '6565123'
+
+        newPassword: '666666'
+
+    updateuserpasswordrequest:
+
+      title: updateuserpasswordrequest
+
+      required:
+
+      - name
+
+      - email
+
+      - oldPassword
+
+      - newPassword
+
+      type: object
+
+      properties:
+
+        name:
+
+          type: string
+
+        email:
+
+          type: string
+
+        oldPassword:
+
+          type: string
+
+        newPassword:
+
+          type: string
+
+      example:
+
+        name: '333333'
+
+        email: 333333@gmail.com
+
+        oldPassword: '6565123'
+
+        newPassword: '666666'
+
+    createproductrequest:
+
+      title: createproductrequest
+
+      required:
+
+      - name
+
+      - price
+
+      - colors
+
+      - company
+
+      - description
+
+      - category
+
+      type: object
+
+      properties:
+
+        name:
+
+          type: string
+
+        price:
+
+          type: integer
+
+          format: int32
+
+        colors:
+
+          type: array
+
+          items:
+
+            type: string
+
+          description: ''
+
+        company:
+
+          type: string
+
+        description:
+
+          type: string
+
+        category:
+
+          type: string
+
+      example:
+
+        name: accent chair
+
+        price: 25999
+
+        colors:
+
+        - '#ff0000'
+
+        - '#00ff00'
+
+        - '#0000ff'
+
+        company: marcos
+
+        description: Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+
+        category: office
+
+    updateproductrequest:
+
+      title: updateproductrequest
+
+      required:
+
+      - name
+
+      type: object
+
+      properties:
+
+        name:
+
+          type: string
+
+      example:
+
+        name: accent chaaaaaaair
+
+    createreviewrequest:
+
+      title: createreviewrequest
+
+      required:
+
+      - product
+
+      - rating
+
+      - title
+
+      - comment
+
+      type: object
+
+      properties:
+
+        product:
+
+          type: string
+
+        rating:
+
+          type: integer
+
+          format: int32
+
+        title:
+
+          type: string
+
+        comment:
+
+          type: string
+
+      example:
+
+        product: 627b116f051b8bebdcdce8ff
+
+        rating: 5
+
+        title: good product
+
+        comment: very very good product
+
+    updatereviewrequest:
+
+      title: updatereviewrequest
+
+      required:
+
+      - title
+
+      - rating
+
+      - comment
+
+      type: object
+
+      properties:
+
+        title:
+
+          type: string
+
+        rating:
+
+          type: integer
+
+          format: int32
+
+        comment:
+
+          type: string
+
+      example:
+
+        title: 55555ag
+
+        rating: 4
+
+        comment: very very weird555555
+
+security:
+
+- {}
+
+tags:
+
+- name: auth
+
+- name: users
+
+- name: product
+
+- name: reviews
+
+- name: orders
+
